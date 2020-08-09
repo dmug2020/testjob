@@ -8,7 +8,9 @@
 
 которая выводит phpinfo(); нужно, чтобы в index.php перед вызовом функции phpinfo(); выводился IP, с которого пришел запрос 
 
-Решение:docker-compose файл поднимает 2 сервиса nginx и php-fpm
+Решение:
+
+docker-compose файл поднимает 2 сервиса nginx и php-fpm
 Конфиг и логи nginx нахдодятся в папках:nginx/conf и nginx/logs
 Веб страница находится в папке test.dev
 https://github.com/ugaidmitry/testjob/blob/master/test.dev/index.php
@@ -17,7 +19,9 @@ https://github.com/ugaidmitry/testjob/blob/master/test.dev/index.php
 Написать скрипт на bash, который при запуске будет парсить лог nginx из первого контейнера и сохранять в файл только уникальные ip адреса с которых заходили на страничкуКод скрипта и docker-compose разместить в публичном доступе github.
 
 
-Решение:bash-скрипт https://github.com/ugaidmitry/testjob/blob/master/uniqip.sh сохраняет в файл только уникальные ip адреса,кажый раз перезаписывая файл https://github.com/ugaidmitry/testjob/blob/master/output.txt
+Решение:
+
+bash-скрипт https://github.com/ugaidmitry/testjob/blob/master/uniqip.sh сохраняет в файл только уникальные ip адреса,кажый раз перезаписывая файл https://github.com/ugaidmitry/testjob/blob/master/output.txt
 
 
 
